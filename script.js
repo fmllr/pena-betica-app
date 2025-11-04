@@ -65,4 +65,10 @@ function gestionarSocios() {
 function controlarPagos() {
   alert("Aquí podrás controlar los pagos de los socios. (Función aún en desarrollo)");
 }
+if (usuarios[usuario] && usuarios[usuario].clave === clave) {
+  mensaje.textContent = `Bienvenido, ${usuario} (${usuarios[usuario].rol})`;
+  mostrarPanel(usuarios[usuario].rol);
+  mostrarAutobuses(); // 👈 Añade esta línea
+}
+
 

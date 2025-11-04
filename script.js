@@ -58,3 +58,11 @@ function exportarCSV() {
   a.download = "pagos.csv";
   a.click();
 }
+function gestionarSocios() {
+  alert("Aquí podrás ver y editar la lista de socios. (Función aún en desarrollo)");
+}
+
+function controlarPagos() {
+  alert("Aquí podrás controlar los pagos de los socios. (Función aún en desarrollo)");
+}
+

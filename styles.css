@@ -1,0 +1,35 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  color: #222;
+}
+
+header {
+  background-color: #006400;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+section {
+  padding: 20px;
+}
+
+input, button {
+  margin: 5px;
+  padding: 10px;
+  display: block;
+}
+
+button {
+  background-color: #228B22;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.panelAdmin, .areaSocio {
+  display: none;
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Peña Cultural Bética de Carmona</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="manifest" href="manifest.json">
+  <script>
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker.register("service-worker.js")
+        .then(() => console.log("Service Worker registrado"));
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <h1>Peña Cultural Bética de Carmona</h1>
+    <h2>Desplazamiento en autobuses al estadio Benito Villamarín</h2>
+  </header>
+
+  <!-- Login -->
+  <section class="login">
+    <h3>Acceso</h3>
+    <form id="loginForm">
+      <input type="text" id="usuario" placeholder="Usuario" required>
+      <input type="password" id="clave" placeholder="Contraseña" required>
+      <button type="submit">Entrar</button>
+    </form>
+    <p id="mensajeLogin"></p>
+  </section>
+
+  <!-- Recuperación -->
+  <section class="recuperar">
+    <h3>¿Olvidaste tu contraseña?</h3>
+    <form id="recuperarForm">
+      <input type="email" id="correoRecuperar" placeholder="Correo electrónico" required>
+      <button type="submit">Enviar enlace</button>
+    </form>
+    <p id="mensajeRecuperar"></p>
+  </section>
+
+  <!-- Validación -->
+  <section class="validacion">
+    <h3>Validación de correo</h3>
+    <form id="validarForm">
+      <input type="text" id="codigoValidacion" placeholder="Código recibido" required>
+      <button type="submit">Validar</button>
+    </form>
+    <p id="mensajeValidacion"></p>
+  </section>
+
+  <!-- Área de Socios -->
+  <section class="areaSocio">
+    <h3>Área de Socios</h3>
+    <p>Consulta tu historial y estado de abonos.</p>
+  </section>
+
+  <!-- Panel de Administración -->
+  <section class="panelAdmin">
+    <h3>Panel de Administración</h3>
+    <button onclick="gestionarSocios()">Gestionar Socios</button>
+    <button onclick="controlarPagos()">Controlar Pagos</button>
+    <button onclick="exportarCSV()">Exportar Datos</button>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
